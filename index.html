@@ -137,9 +137,9 @@
     p { font-weight: 300; color: var(--text); max-width: 65ch; }
 
     /* ═══ HOME ═══ */
-    .gadu { padding: 6rem 0 4rem; border-bottom: 1px solid var(--border); }
+    .gadu { padding: 2rem 0 2rem; border-bottom: 1px solid var(--border); }
     .gadu-eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.5rem; }
-    .gadu h1 { color: var(--text); margin-bottom: 2rem; }
+    .gadu h1 { color: var(--text); margin-bottom: 1rem; }
     .gadu h1 span { color: var(--accent); display: block; }
     .gadu-bio { font-size: 1.1rem; font-weight: 300; max-width: 50ch; color: var(--muted); margin-bottom: 3rem; line-height: 1.8; }
     .gadu-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
@@ -252,19 +252,19 @@
     }
     .about-text h2 { margin-bottom: 1.5rem; }
     .about-text p { color: var(--muted); margin-bottom: 1.25rem; }
-    .skills-block { margin-bottom: 2.5rem; }
+    .skills-block { margin-bottom: 1.5rem; }
     .skills-block h3 { font-size: 1rem; letter-spacing: 0.08em; margin-bottom: 1rem; color: var(--muted); }
-    .skill-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+    .skill-list { list-style: none; display: flex; flex-direction: column; gap: 0.3rem; }
     .skill-list li { font-size: 0.95rem; padding-left: 1rem; border-left: 2px solid var(--accent); line-height: 1.4; }
 
     /* ═══ CONTACT / FOOTER ═══ */
     .contact-block { padding: 5rem 0; border-top: 1px solid var(--border); }
     .contact-block h2 { margin-bottom: 1rem; }
     .contact-block p { color: var(--muted); margin-bottom: 2rem; }
-    .contact-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .contact-links {padding-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap; }
     footer { border-top: 1px solid var(--border); padding: 2rem; text-align: center; font-size: 0.75rem; color: var(--muted); letter-spacing: 0.08em; }
 
-
+    .about-sidebar{margin-left: 45rem; position: absolute; }
 
 
 
@@ -446,7 +446,6 @@
       <li><button data-target="3d" class="active">3D Modelling</button></li>
       <li><button data-target="video">Video Editing</button></li>
       <li><button data-target="games">Games</button></li>
-      <li><button data-target="about">About</button></li>
     </ul>
   </nav>
 
@@ -470,17 +469,58 @@
        HOME PAGE
   ═══════════════════════════════════════════ -->
   <section id="home" class="page">
+    
     <div class="container">
+
+      <div class="about-grid">
+        <div class="about-text">
       <div class="gadu">
         <p class="gadu-eyebrow">Portfolio — 3D | Video | Game Dev</p>
         <h1>PEP<span>RAMÍREZ</span></h1>
         <p class="gadu-bio">3D artist, video editor, and wannabe game dev based in Barcelona.</p>
-
-        <div class="gadu-stats">
-          <div class="stat-item"><div class="stat-number">12</div><div class="stat-label">Bananas</div></div>
-          <div class="stat-item"><div class="stat-number">4</div><div class="stat-label">Apples</div></div>
-          <div class="stat-item"><div class="stat-number">3</div><div class="stat-label">Kiwis</div></div>
+</div>
+<table style="padding-top: 0.3rem;">
+  <tr>
+    <td style=" padding-right:10px;">Phone</td>
+    <td>| +34 640306601</td>
+  </tr>
+  <tr>
+    <td style=" padding-right:10px;">E-mail</td>
+    <td>| pepnasa100@gmail.com</td>
+  </tr>
+  <tr>
+    <td style=" padding-right:10px;">YouTube</td>
+    <td style="color:  var(--accent);"><a href="https://youtube.com/@gadubadish" target="_blank"><span style="color: white;">|</span> Gadubadish</a></td>
+  </tr>
+</table>
         </div>
+        <div class="about-sidebar">
+          <h3>Skills</h3>
+          <div class="skills-block">
+            <h3>3D Software</h3>
+            <ul class="skill-list"><li>Blender</li></ul>
+          </div>
+          <div class="skills-block">
+            <h3>Video &amp; Post</h3>
+            <ul class="skill-list"><li>Adobe Premiere Pro</li><li>After Effects</li><li>DaVinci Resolve</li></ul>
+          </div>
+            <div class="skills-block">
+            <h3>Game Engines</h3>
+            <ul class="skill-list"><li>Unity</li><li>Unreal Engine</li></ul>
+          </div>
+          <div class="skills-block">
+            <h3>Other</h3>
+            <ul class="skill-list"><li>Photoshop</li><li>Lightroom</li><li>Illustrator</li></ul>
+          </div>
+          <div class="skills-block">
+            <h3>Programming Languages</h3>
+            <ul class="skill-list"><li>HTML / CSS</li><li>C#</li></ul>
+          </div>
+        </div>
+      </div>
+
+
+        
       </div>
     </div>
   </section>
@@ -629,11 +669,7 @@
       <!-- 2025 / 2024: empty placeholders — add project-rows here the same
            way the 2022/2021/2020 entries below are built, then delete
            this comment once filled in. -->
-      <div class="proj-year">2025</div>
-      <div class="project-row"><div class="proj-details"></div></div>
 
-      <div class="proj-year">2024</div>
-      <div class="project-row"><div class="proj-details"></div></div>
 
       <div class="proj-year">2022</div>
 
@@ -763,44 +799,6 @@
   </section>
 
 
-  <!-- ══════════════════════════════════════════
-       ABOUT PAGE
-  ═══════════════════════════════════════════ -->
-  <section id="about" class="page">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <p class="section-label">About</p>
-          <h2>A Bit About Me</h2>
-          <p>I'm Pep Ramírez, a 3D artist and video editor based in Barcelona. I've been working with Blender and Unity since 2019.</p>
-          <p>Outside of personal projects I've competed in 3D challenges and game jams. [maybe explain about hs interactive and abandoned].</p>
-          <br>
-          <div class="contact-links">
-            <a href="mailto:pepnasa100@gmail.com" class="btn btn-primary">Email Me</a>
-            <a href="https://linkedin.com/in/yourhandle" class="btn" target="_blank">LinkedIn</a>
-          </div>
-        </div>
-        <div class="about-sidebar">
-          <div class="skills-block">
-            <h3>3D Software</h3>
-            <ul class="skill-list"><li>Blender</li></ul>
-          </div>
-          <div class="skills-block">
-            <h3>Video &amp; Post</h3>
-            <ul class="skill-list"><li>Adobe Premiere Pro</li><li>After Effects</li><li>DaVinci Resolve</li></ul>
-          </div>
-            <div class="skills-block">
-            <h3>Game Engines</h3>
-            <ul class="skill-list"><li>Unity</li><li>Unreal Engine</li></ul>
-          </div>
-          <div class="skills-block">
-            <h3>Other</h3>
-            <ul class="skill-list"><li>Photoshop</li><li>HTML / CSS</li></ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 
   <footer>

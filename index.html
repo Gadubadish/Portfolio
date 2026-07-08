@@ -272,7 +272,6 @@
        ║   DETAIL "PAGE" (same nav)       ║
        ╚═══════════════════════════════════════════╝ */
 
-    /* .page system already handles this — detail pages use id="detail-*" */
     .detail-back {
       display: inline-flex;
       align-items: center;
@@ -656,7 +655,7 @@
           <div class="inline-detail" id="inline-infinite-journeys"></div>
         </div>
 
-      </div><!-- /projects-grid -->
+      </div>
 
 
       <!-- ══ OTHER WORK ══ -->
@@ -666,9 +665,7 @@
         <p>Smaller 3D projects.</p>
       </div>
 
-      <!-- 2025 / 2024: empty placeholders — add project-rows here the same
-           way the 2022/2021/2020 entries below are built, then delete
-           this comment once filled in. -->
+
 
 
       <div class="proj-year">2022</div>
@@ -809,9 +806,8 @@
   <!-- ══════════════════════════════════════════
        PROJECT DATA
        ─────────────────────────────────────────
-       To add/edit a project:
-       1. Find its id in PROJECTS below (or add one)
-       2. Fill in title, date, tech, renderTime,
+
+          title, date, tech, renderTime,
           writeup (array of paragraphs),
           mainMedia (path to video/image),
           mediaType ('video' or 'image'),
@@ -833,7 +829,7 @@
       ],
       mainMedia: "Challanges/DS_Entry.mp4",
       mediaType: "video",
-      gallery: []
+      gallery: ["Challanges/DS/base1.jpg","Challanges/DS/tunnel1.jpg","Challanges/DS/screen1.png","Challanges/DS/brain1.jpg","Challanges/DS/brain2.jpg"]
       // gallery: ["path/to/wip1.jpg", "path/to/wip2.jpg"]
     },
 
